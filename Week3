@@ -1,0 +1,36 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace Operators_UserInput
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            double weight = 20.9;
+            int age = 2;
+
+            Console.WriteLine("What is your middle initial?");
+            char middleInitial = Convert.ToChar(Console.ReadLine());
+            
+            Console.WriteLine("Have you seen Harry Potter?");
+            bool hasSeenHarryPotter = Convert.ToBoolean(Console.ReadLine());
+
+            Console.WriteLine($"Weight: {weight}");
+            Console.WriteLine($"Middle Initial: {middleInitial}");
+            Console.WriteLine($"Has seen Harry Potter: {hasSeenHarryPotter}");
+
+
+
+
+            // Console.WriteLine("What is your age?");
+            //
+            // int age = Int32.Parse(null);
+            // int age2 = Convert.ToInt32(null);
+            //
+            //
+            //
+            // Console.WriteLine($"Your age plus 10 years is {age + 10}"); 
+        }
+    }
+}
